@@ -16,9 +16,9 @@ The preferred way of installing is via the [Swift Package Manager](https://swift
 1. Download and unzip the latest SquareInAppPaymentsSDK.zip artifact from the [Square In-App Payments Github repository release list](https://github.com/square/in-app-payments-ios/releases).
   
 2.  Add the **SquareInAppPaymentsSDK** and **SquareBuyerVerificationSDK** frameworks to your project:
-        1.  Open the **General** tab for your application target in Xcode.
-        2.  Drag **SquareInAppPaymentsSDK.xcframework** and **SquareBuyerVerificationSDK.xcframework** from the unzipped folder into the **Embedded Binaries** section.
-        3.  Choose **Copy Items if Needed**, and then choose **Finish** in the dialog box that appears.
+       1.  Open the **General** tab for your application target in Xcode.
+       2.  Drag **SquareInAppPaymentsSDK.xcframework** and **SquareBuyerVerificationSDK.xcframework** from the unzipped folder into the **Embedded Binaries** section.
+       3.  Choose **Copy Items if Needed**, and then choose **Finish** in the dialog box that appears.
 
 3. Add **Square In App Payments SwiftUI ** to your project
 	1. Select **File** at the top of your screen in Xcode
