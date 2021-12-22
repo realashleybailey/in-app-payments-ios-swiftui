@@ -89,10 +89,10 @@
   "active": "e8805eca412f5177",
   "lastOpenFiles": [
     "docs/index.md",
+    "README.md",
     "docs/images/XcodeFrameworkFilesSelect.png",
     "docs/images/XcodeFrameworkAddFiles.png",
     "docs/images/XcodeFilesDropdown.png",
-    "docs/images/XcodeAddFrameworks.png",
-    "README.md"
+    "docs/images/XcodeAddFrameworks.png"
   ]
 }
