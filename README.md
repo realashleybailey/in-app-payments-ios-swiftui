@@ -10,9 +10,12 @@ The preferred way of installing is via the [Swift Package Manager](https://swift
 
 1. In Xcode, open your project and navigate to **File** → **Swift Packages** → **Add Package Dependency...**
 2. Paste the repository URL (`https://github.com/realashleybailey/in-app-payments-ios-swiftui`) and click **Next**.
-3. For **Rules**, select **Branch** (with branch set to `master`).
+3. For **Rules**, select **Branch** (with branch set to `main`).
 4. Click **Finish**.
 
 # Contents
 While the project itself is stable it does rely on Squares In-App Payments SDK and updates to that SDK could break our implementaion so its on you to test your app fully before releasing to production.
+
+# Setup/Docs
+>Please visit [https://io.ashleybailey.me/in-app-payments-ios-swiftui](https://io.ashleybailey.me/in-app-payments-ios-swiftui) to read documentation
 
