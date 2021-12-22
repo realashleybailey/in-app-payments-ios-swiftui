@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "docs/index.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "docs/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,8 +88,8 @@
   },
   "active": "e8805eca412f5177",
   "lastOpenFiles": [
-    "README.md",
     "docs/index.md",
+    "README.md",
     "docs/images/XcodeFrameworkFilesSelect.png",
     "docs/images/XcodeFrameworkAddFiles.png",
     "docs/images/XcodeFilesDropdown.png",

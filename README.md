@@ -9,8 +9,6 @@ While the project itself is stable it does rely on Squares In-App Payments SDK a
 
 # Installation/Setup
 
-The preferred way of installing is via the [Swift Package Manager](https://swift.org/package-manager/).
-
 ## Install Square InAppPaymentsSDK Frameworks
 >YOU MUST INSTALL THE FRAMWORKS FOR THis PACKAGE TO WORK
 1. Download and unzip the latest SquareInAppPaymentsSDK.zip artifact from the [Square In-App Payments Github repository release list](https://github.com/square/in-app-payments-ios/releases).
@@ -31,6 +29,9 @@ The preferred way of installing is via the [Swift Package Manager](https://swift
 
 ## Install Square InAppPaymentsSDK SwiftUI
 >Xcode 11 integrates with libSwiftPM to provide support for iOS platforms.
+
+The preferred way of installing is via the [Swift Package Manager](https://swift.org/package-manager/).
+
 1. In Xcode, open your project and navigate to **File** → **Add Packages**
 2. Paste the repository URL (`https://github.com/realashleybailey/in-app-payments-ios-swiftui`) in the **Search or Enter Package URL** field
 3. For **Rules**, select **Branch** (with branch set to `main`).
