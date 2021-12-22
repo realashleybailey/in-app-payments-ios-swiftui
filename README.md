@@ -10,7 +10,7 @@ While the project itself is stable it does rely on Squares In-App Payments SDK a
 # Installation/Setup
 
 ## Install Square InAppPaymentsSDK Frameworks
->YOU MUST INSTALL THE FRAMWORKS FOR THis PACKAGE TO WORK
+>YOU MUST INSTALL THE FRAMWORKS FOR THIS PACKAGE TO WORK
 1. Download and unzip the latest SquareInAppPaymentsSDK.zip artifact from the [Square In-App Payments Github repository release list](https://github.com/square/in-app-payments-ios/releases).
   
 2.  Add the **SquareInAppPaymentsSDK** and **SquareBuyerVerificationSDK** frameworks to your project:
