@@ -17,5 +17,5 @@ The preferred way of installing is via the [Swift Package Manager](https://swift
 While the project itself is stable it does rely on Squares In-App Payments SDK and updates to that SDK could break our implementaion so its on you to test your app fully before releasing to production.
 
 # Setup/Docs
->Please visit [https://io.ashleybailey.me/in-app-payments-ios-swiftui](https://io.ashleybailey.me/in-app-payments-ios-swiftui) to read documentation
+>Please visit [https://realashleybailey.github.io/in-app-payments-ios-swiftui/](https://realashleybailey.github.io/in-app-payments-ios-swiftui/) to read documentation
 
