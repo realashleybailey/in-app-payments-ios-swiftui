@@ -23,7 +23,7 @@ Card Pay is a single use Card Input form that returns a cnon:nonce_here through 
 
 1. Add imports to the top of the file
 
-    > Even though you interface with <strong>SquareInAppPaymentsSwiftUI</strong> you still have to import <strong>SquareBuyerVerificationSDK</strong> and <strong>SquareInAppPaymentsSDK</strong> so that you can use some of its Struct Types that let you pass data in.active
+    > Even though you interface with <strong>SquareInAppPaymentsSwiftUI</strong> you still have to import <strong>SquareBuyerVerificationSDK</strong> and <strong>SquareInAppPaymentsSDK</strong> so that you can use some of its Struct Types that let you pass data in.
 
     ````
     import SwiftUI
@@ -195,7 +195,7 @@ Card Pay is a single use Card Input form that returns a cnon:nonce_here through 
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
         
-                // Return NSError to completionHandler() to deny transaction
+                // Return NSError to completionHandler() to indicate unsuccessfull transaction
                 let error = NSError(domain: "", code: 0, userInfo: ["Transaction Error": "We could not proccess your transaction"])
                 completionHandler(error)
         
@@ -210,3 +210,9 @@ Card Pay is a single use Card Input form that returns a cnon:nonce_here through 
         
 	}
     ````
+
+## The Result
+
+![iPhone App](../../images/CardPayMain.gif) | ![iPhone App](../../images/CardPayMainError.gif)
+
+![iPhone App](../../images/CardPayLog.png)
