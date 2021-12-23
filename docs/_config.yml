@@ -28,7 +28,6 @@ plugins:
   - jekyll-sitemap
 
 exclude:
-  - menu.md
   - .jekyll-cache/
   - Gemfile
   - Gemfile.lock

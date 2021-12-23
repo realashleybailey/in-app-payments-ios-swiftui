@@ -7,7 +7,7 @@
       			<p class="nav-item nav-link active" style="margin: 0px;">{{ p.title }}</p>
 				<p class="nav-item nav-link" style="margin: 0px; padding-left: 0px; padding-right: 0px;">&#47;</p>
 			{% else %}
-			    <a class="nav-item nav-link" href="..{{ p.url }}">{{ p.title }}</a>
+			    <a class="nav-item nav-link" href="{% if page.url == '/' %}.{% else %}..{% endif %}{{ p.url }}">{{ p.title }}</a>
 				<p class="nav-item nav-link" style="margin: 0px; padding-left: 0px; padding-right: 0px;">&#47;</p>
 			{% endif %}
 		{% endif %}
