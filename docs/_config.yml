@@ -21,20 +21,11 @@
 title: Square In-App Payments iOS SDK SwiftUI
 email: admin@ashleybailey.me
 description: This SDK is SwiftUI wrapper to the existing In-App-Payments-SDK and is packed with everything you need to intergrate payments in your app.
-github_username:  realashleybailey
 
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
-  - jekyll-mentions 
-  - jemoji
-  - jekyll-redirect-from
-  - jekyll-feed
-
-sass:
-  sass_dir: scss
-  style: compressed
 
 exclude:
   - menu.md

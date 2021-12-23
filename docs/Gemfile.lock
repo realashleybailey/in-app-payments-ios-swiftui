@@ -334,12 +334,8 @@ DEPENDENCIES
   bootstrap
   github-pages
   jekyll
-  jekyll-feed
-  jekyll-mentions
-  jekyll-redirect-from
-  jekyll-remote-theme (~> 0.1)
+  jekyll-remote-theme
   jekyll-sitemap
-  jemoji
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)

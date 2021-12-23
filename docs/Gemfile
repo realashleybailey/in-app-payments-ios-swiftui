@@ -8,17 +8,12 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 gem "jekyll"
-gem 'bootstrap'
 
 gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-remote-theme", "~> 0.1"
+  gem "jekyll-remote-theme"
   gem "jekyll-sitemap"
-  gem "jekyll-mentions"
-  gem "jemoji"
-  gem "jekyll-redirect-from"
-  gem "jekyll-feed"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem

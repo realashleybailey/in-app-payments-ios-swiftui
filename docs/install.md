@@ -8,7 +8,7 @@ layout: default
 
 # Installation & Setup
 
-## Install Square InAppPaymentsSDK Frameworks
+## Install Square In App Payments SDK Frameworks
 >YOU MUST INSTALL THE FRAMWORKS FOR THIS PACKAGE TO WORK
 
 1. Download and unzip the latest SquareInAppPaymentsSDK.zip artifact from the [Square In-App Payments Github repository release list](https://github.com/square/in-app-payments-ios/releases).
@@ -18,7 +18,7 @@ layout: default
        2.  Drag **SquareInAppPaymentsSDK.xcframework** and **SquareBuyerVerificationSDK.xcframework** from the unzipped folder into the **Embedded Binaries** section.
        3.  Choose **Copy Items if Needed**, and then choose **Finish** in the dialog box that appears.
 
-## Install Square InAppPaymentsSDK SwiftUI
+## Install Square In App Payments SDK SwiftUI
 >Xcode 11 integrates with libSwiftPM to provide support for iOS platforms.
 
 1. The preferred way of installing is via the [Swift Package Manager](https://swift.org/package-manager/).

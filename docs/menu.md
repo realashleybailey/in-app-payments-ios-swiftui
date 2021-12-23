@@ -4,9 +4,11 @@
 	{% for p in site.pages %}
 		{% if p.title %}
 			{% if page.url == p.url %}
-      			<a class="nav-item nav-link active" href="/in-app-payments-ios-swiftui{{ p.url }}">{{ p.title }}</a>
+      			<p class="nav-item nav-link active" style="margin: 0px;">{{ p.title }}</p>
+				<p class="nav-item nav-link" style="margin: 0px; padding-left: 0px; padding-right: 0px;">&#47;</p>
 			{% else %}
-			    <a class="nav-item nav-link" href="/in-app-payments-ios-swiftui{{ p.url }}">{{ p.title }}</a>
+			    <a class="nav-item nav-link" href="{{ p.url }}">{{ p.title }}</a>
+				<p class="nav-item nav-link" style="margin: 0px; padding-left: 0px; padding-right: 0px;">&#47;</p>
 			{% endif %}
 		{% endif %}
 	{% endfor %}
