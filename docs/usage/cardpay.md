@@ -6,7 +6,7 @@ layout: default
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="collapse navbar-collapse">
     <div class="navbar-nav">
-        <a class="nav-item nav-link btn" style="background-color: rgb(0 0 0 / 8%); border-color: rgb(0 0 0 / 20%);" href="../../">
+        <a class="nav-item nav-link btn" style="background-color: rgb(0 0 0 / 8%); border-color: rgb(0 0 0 / 20%);" href="../../usage">
             <span style="margin-right: 5px; margin-left: 5px;"><i class="fas fa-arrow-left" style="margin-right: 5px;"></i> Back</span>
         </a>
     </div>
@@ -16,14 +16,14 @@ layout: default
 # Add Card Pay to your project
 Card Pay is a single use Card Input form that returns a cnon:nonce_here through a completion block to allow you to proccess the transaction.
 
-> <strong>Example Application</strong><br>
+> **Example Application**<br>
 > To see an example Swift application [click here](../../example/cardpay/)
 
 ## Steps
 
 1. Add imports to the top of the file
 
-    > Even though you interface with <strong>SquareInAppPaymentsSwiftUI</strong> you still have to import <strong>SquareBuyerVerificationSDK</strong> and <strong>SquareInAppPaymentsSDK</strong> so that you can use some of its Struct Types that let you pass data in.
+    > Even though you interface with **SquareInAppPaymentsSwiftUI** you still have to import **SquareBuyerVerificationSDK** and **SquareInAppPaymentsSDK** so that you can use some of its Struct Types that let you pass data in.
 
     ````
     import SwiftUI
@@ -44,9 +44,9 @@ Card Pay is a single use Card Input form that returns a cnon:nonce_here through 
     }
     ````
 
-3. Add the Card Pay initilizer action
+3. Add the Card Pay initilizer function
 
-    > Verify Buyer can be set to ````nil```` if you do not want to verify the users card, see <strong>Step 4</strong> on how to create a Verify Buyer
+    > Verify Buyer can be set to ````nil```` if you do not want to verify the users card, see **Step 4** on how to create a Verify Buyer
 
     ````
     var body: some View {
@@ -60,13 +60,15 @@ Card Pay is a single use Card Input form that returns a cnon:nonce_here through 
     }
     ````
 
-4. To create a Verify Buyer create a ````let```` and assign it ````SQIPVerifyBuyerSwiftUI()````
+4. How to implement Verify Buyer
+
+    To create a Verify Buyer create a ````let```` and assign it ````SQIPVerifyBuyerSwiftUI()````
 
     1. Create a ````let```` and assign string of Square Location ID
     2. Create a ````SQIPContact()```` and assign values
     3. Create a ````SQIPMoney()```` and insert amount and currency
 
-    > <strong>How to find your Location ID:</strong>
+    > **How to find your Location ID:**
     >
     > 1. Go to [https://developer.squareup.com](https://developer.squareup.com).
     > 2. Click Developer Dashboard.
@@ -76,19 +78,19 @@ Card Pay is a single use Card Input form that returns a cnon:nonce_here through 
     >
     > Before copying the Location ID, check that the top of the page that you have selected either "Sandbox" or "Production".
 
-    > <strong>SQIPContact</strong>
+    > **SQIPContact**
     >
     > You should build the [SQIPContact](https://developer.squareup.com/docs/api/in-app-payment/ios/Classes/SQIPContact.html) object with as many contact field values as possible. 
     > You must provide the given name. 
     > The contact family name and city should be provided. 
     > The more complete the contact object, the lower the chance that the buyer is challenged by the card-issuing bank.
 
-    > <strong> SQIPMoney</strong>
+    > ** SQIPMoney**
     >
     > [SQIPMoney](https://developer.squareup.com/docs/api/in-app-payment/ios/Classes/SQIPMoney.html) will charge the card payment source ID with amount in the specified currency
     >
-    > | amount | Amount of money that will be charged (i.e 100 in GBP will be £1.00) |
-    > | currency | The currency the payment source ID will be charged in. |
+    > amount | Amount of money that will be charged (i.e 100 in GBP will be £1.00)
+    > currency | The currency the payment source ID will be charged in.
 
     ````
 
@@ -128,18 +130,18 @@ Card Pay is a single use Card Input form that returns a cnon:nonce_here through 
 
     Copy and past this into your project
 
-    > <strong>How it works</strong>
+    > **How it works**
     >
     > How you choose to proccess the card nonce and verification token is up to you, we have provided an example below.
     >
     > The Card Nonce is provided at ````card.nonce```` and the Verification Token is provided at ````verify?.verificationToken````<br>
     > Verification Token is optional because it becomes ````nil```` if no verify buyer is provided to ````SQIP.cardPay.present()````
     
-    > <strong>completionHandler()</strong>
+    > **completionHandler()**
     >
     > When payment is successfull call ````completionHandler(nil)```` inside the function to indicate a successfull transaction
     >
-    > When the payment is <strong>not</strong> successfull then call ````completionHandler(error)````, error should be of type ````NSError```` for example:<br>
+    > When the payment is **not** successfull then call ````completionHandler(error)````, error should be of type ````NSError```` for example:<br>
     > ````let error = NSError(domain: "", code: 0, userInfo: ["Transaction Error": "We could not proccess your transaction"])````
     
     ````
@@ -161,9 +163,9 @@ Card Pay is a single use Card Input form that returns a cnon:nonce_here through 
 
     ````
 
-    > <strong>Example function for proccessing a transaction</strong>
+    > **Example function for proccessing a transaction**
     >
-    > Take the result of <strong>````card````</strong> and <strong>````verify````</strong> if you chose to verify buyers
+    > Take the result of **````card````** and **````verify````** if you chose to verify buyers
 
     ````
 

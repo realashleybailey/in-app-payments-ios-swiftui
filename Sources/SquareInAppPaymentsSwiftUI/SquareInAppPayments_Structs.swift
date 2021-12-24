@@ -76,7 +76,7 @@ public func SQIPCardBrandToHumanReadableText(_ brand: SQIPCardBrandSwiftUI) -> S
 
 public struct SQIPVerifyBuyerSwiftUI {
 	
-	public init(_ locationID: String, _ contact: SQIPContact, _ money: SQIPMoney?) {
+	public init(_ locationID: String, _ contact: SQIPContact, _ money: SQIPMoney? = nil) {
 		self.locationID = locationID
 		self.contact = contact
 		

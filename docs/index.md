@@ -13,4 +13,6 @@ Build remarkable payments experiences in your SwiftUI app. This SDK is SwiftUI w
 # Information
 While the project itself is stable it does rely on Squares In-App Payments SDK and updates to that SDK could break our implementaion so its on you to test your app fully before releasing to production.
 
-# Recent Posts
+# DOCUMENTATION IS INCOMPLETE
+
+> The documentation is currently incomplete, appologies for the inconvience, we have been able to document some compenents [here](./usage)

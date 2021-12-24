@@ -16,7 +16,7 @@ extension SQIP {
 	@available(iOS 14.0, *)
 	public class savedCards {
 		
-		public static func present(theme: SQIPTheme, cards: [SQIPCardDetailsSwiftUI], selected: SQIPCardDetailsSwiftUI?, addCardCompletion: @escaping (SQIPCardDetails, SQIPBuyerVerifiedDetails?, @escaping (Error?) -> Void) -> Void, addCardVerifyBuyer: SQIPVerifyBuyerSwiftUI?, completion: @escaping ((SQIPCardDetailsSwiftUI) -> Void), style: UIUserInterfaceStyle = .unspecified) {
+		public static func present(theme: SQIPTheme? = SQIPTheme(), cards: [SQIPCardDetailsSwiftUI], selected: SQIPCardDetailsSwiftUI? = nil, addCardCompletion: @escaping (SQIPCardDetails, SQIPBuyerVerifiedDetails?, @escaping (Error?) -> Void) -> Void, addCardVerifyBuyer: SQIPVerifyBuyerSwiftUI?, completion: @escaping ((SQIPCardDetailsSwiftUI) -> Void), style: UIUserInterfaceStyle = .unspecified) {
 
 			var current: SQIPCardDetailsSwiftUI = SQIPCardDetailsSwiftUI(id: "applePay", cardBrand: .applePay, last4: "0000")
 
