@@ -110,7 +110,7 @@ extension SQIP {
 							.shadow(color: colorScheme == .light ? Color.black.opacity(0.06) : Color.clear, radius: 5, x: 5, y: 5)
 							.overlay(RoundedRectangle(cornerRadius: 4).stroke(colorScheme == .dark ? Color.white : Color.clear, lineWidth: 1))
 							.font(.system(size: 17, weight: .semibold))
-							.onReceive(timer) { timer in
+							.onReceive(timer) { _ in
 							if self.animate {
 								withAnimation(.easeInOut(duration: 0.7)) {
 									self.textTrans = !self.textTrans
@@ -149,7 +149,7 @@ extension SQIP {
 				.accessibility(label: Text("Select a card", comment: "Accessibility label for select a card button"))
 			}
 
-			func selectCard() -> Void {
+			func selectCard() {
 
 				let theme = SQIPTheme()
 				theme.saveButtonTitle = "Add Card"
@@ -273,7 +273,7 @@ extension SQIP {
 				getTopViewController()?.navigationController?.pushViewController(vc, animated: true)
 			}
 
-			func addCard_Success(card: SQIPCardDetails) -> Void {
+			func addCard_Success(card: SQIPCardDetails) {
 				getTopViewController()?.navigationController?.popViewController(animated: true)
 
 				let id: String = card.nonce
@@ -285,11 +285,11 @@ extension SQIP {
 				self.selected = newCard
 			}
 
-			func addCard_Canceled(card: SQIPCardDetails) -> Void {
+			func addCard_Canceled(card: SQIPCardDetails) {
 
 			}
 
-			func selectCard() -> Void {
+			func selectCard() {
 				if self.selected != nil {
 					savedCards.dismiss()
 					self.completion(self.selected!)
